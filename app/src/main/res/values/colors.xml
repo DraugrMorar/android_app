@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="task">#d9febfc1</color>
+    <color name="plus">#fffebfc1</color>
+    <color name="data">#d9c2ffbf</color>
+    <color name="button_shadow">#483D8B</color>
+</resources>
