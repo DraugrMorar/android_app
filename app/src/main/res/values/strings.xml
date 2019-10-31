@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="to_do">To do</string>
-    <string name="data">dd/mm/yyyy</string>
     <string name="date">date</string>
 </resources>
