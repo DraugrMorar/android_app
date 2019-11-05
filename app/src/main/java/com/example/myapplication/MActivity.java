@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ public class MActivity extends Activity {
     private EditText task;
     private EditText date;
     private Button add;
+    private Button second_activity;
     private ItemsAdapter adapter;
 
 
@@ -35,6 +37,7 @@ public class MActivity extends Activity {
         task = (EditText) findViewById(R.id.task);
         date = (EditText) findViewById(R.id.data);
         add = (Button) findViewById(R.id.add);
+        second_activity = (Button) findViewById(R.id.secondA);
         adapter = new ItemsAdapter();
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
@@ -43,8 +46,19 @@ public class MActivity extends Activity {
             }
         };
         add.setOnClickListener(listener);
-    }
 
+        View.OnClickListener swap = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MActivity.this, secondActivity.class);
+                startActivity(intent);
+
+            }
+
+        };
+        second_activity.setOnClickListener(swap);
+
+    }
     private void putText() {
         if (task.getText().length() == 0) {
             return;
