@@ -40,6 +40,8 @@ public class MActivity extends Activity {
             @Override
             public void onClick(View v) {
                 putText();
+                Toast toast =Toast.makeText(MActivity.this, "Create new task", Toast.LENGTH_SHORT);
+                toast.show();
             }
         };
         add.setOnClickListener(listener);
@@ -74,4 +76,5 @@ public class MActivity extends Activity {
             return view;
         }
     }
+
 }
