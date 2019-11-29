@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="task">#d9febfc1</color>
-    <color name="plus">#fffebfc1</color>
-    <color name="data">#66A2AC</color>
+    <color name="plus">#FEBFC1</color>
+    <color name="data">#C766A2AC</color>
 </resources>

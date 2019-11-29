@@ -10,17 +10,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
     static final String BASE_URL = "http://10.0.2.2:8080/";
-    //создаем билдер для рест сервиса
+
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
     private static Retrofit.Builder sBuilder = new Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create());
-//создание рест сервиса
-    public static <S> S createService(Class<S> serviceClass){
+
+    public static <S> S createService(Class<S> serviceClass) {
         Retrofit retrofit = sBuilder
                 .client(httpClient.build())
                 .build();
-        return retrofit.create(serviceClass); //передача в билдер методы сервиса
-}
+        return retrofit.create(serviceClass);
+    }
 }

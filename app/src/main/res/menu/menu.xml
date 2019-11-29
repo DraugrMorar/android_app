@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m_add"
+        android:title="Add new task"></item>
+    <group android:id="@id/m_sort_date">
+        <item
+            android:id="@+id/m_sort_date"
+            android:title="Sort by date"></item>
+        <item
+            android:id="@+id/m_sort_title"
+            android:title="Sort by title"></item>
+        <item
+            android:id="@+id/m_sort_priority"
+            android:title="Sort by priority"></item>
+        <item
+            android:id="@+id/m_sort_status"
+            android:title="Sort by status"></item>
+    </group>
+    <item
+        android:id="@+id/m_ch_u"
+        android:title="Change user"></item>
+
+    <item
+        android:id="@+id/m_exit"
+        android:title="Exit"></item>
+</menu>

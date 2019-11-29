@@ -17,7 +17,7 @@ public class ToDoList {
     private String description;
     @SerializedName("date")
     @Expose
-    private Date date;
+    private String date;
     @SerializedName("status")
     @Expose
     private int status;
@@ -60,11 +60,11 @@ public class ToDoList {
         this.description = description;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

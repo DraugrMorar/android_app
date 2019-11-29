@@ -9,6 +9,8 @@
     <string name="createdate">dd.mm.yyyy</string>
     <string name="task">task</string>
     <string name="description">description</string>
+    <string name="new_password">new password</string>
+    <string name="old_password">old password</string>
     <string-array name="priority">
         <item>Low</item>
         <item>Middle</item>

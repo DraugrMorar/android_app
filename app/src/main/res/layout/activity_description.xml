@@ -4,46 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Description"
-    android:background="@drawable/coffee_roses">
+    android:background="@drawable/coffee_roses"
+    tools:context=".Description">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/task"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/task"
-            android:inputType="textPersonName" />
+            android:layout_weight="6"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/createdesc"
-            android:layout_width="match_parent"
-            android:layout_height="269dp"
-            android:ems="10"
-            android:hint="@string/description"
-            android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/task"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/createdate"
-            android:ems="10"
-            android:inputType="date" />
+            <EditText
+                android:id="@+id/createdesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/description"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/bdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginTop="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_5"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:layout_weight="3"
+                android:background="@color/data"
+                android:onClick="setDate" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Spinner
-                android:id="@+id/Priority"
+                android:id="@+id/priority"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:layout_marginLeft="@dimen/padding_5"
@@ -65,7 +79,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
